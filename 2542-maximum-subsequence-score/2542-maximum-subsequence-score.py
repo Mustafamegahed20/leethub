@@ -9,7 +9,7 @@ class Solution(object):
 
         total = res = 0
         h = []
-        for a,b in sorted(list(zip(nums1, nums2)), key=lambda ab: -ab[1]):
+        for a,b in sorted(list(zip(nums1, nums2)), key=lambda x: -x[1]):
             heappush(h, a)
             total += a
             if len(h) > k:
